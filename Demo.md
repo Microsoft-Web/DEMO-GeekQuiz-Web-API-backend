@@ -101,6 +101,18 @@ This demo is composed of the following segments:
 	using GeekQuiz.Services;
 ````
 
+1. Add the Authorize attribute to the TriviaController.
+
+	<!-- mark:3 -->
+	````C#
+	namespace GeekQuiz.Controllers
+	{
+		 [Authorize]
+		 public class TriviaController : ApiController
+		 {
+	````
+
+
 1. Add the following code to create a **Get** action in the **TriviaController**.
 
 	<!-- mark:1-14 -->
@@ -149,7 +161,7 @@ This demo is composed of the following segments:
 <a name="Segment2" />
 ### Run the solution ###
 
-1. Set breakpoints on the first line of the Get and Post methods.
+1. Set breakpoints on the first line of the **Get** and **Post** methods.
 
 	![Setting the debug breakpoints to the methods](images/setting-the-debug-breakpoints.png?raw=true "Setting the debug breakpoints to the methods")
 
@@ -157,7 +169,29 @@ This demo is composed of the following segments:
 
 1. Debug the application with **F5**.
 
-1. TODO: Step the methods.
+	> **Note:** If the Log in page is displayed, provide the credentials you created during the setup steps.
+	
+	> ![Logging in the site](images/logging-in-the-app.png?raw=true "Logging in the site")
+
+1. In Visual Studio, you will see the debugger at the first line of the **Get** method. Continue by stepping over the code (**F10**).
+
+	![Stopping at the first line of the Get method](images/stopping-at-the-first-line-of-get.png?raw=true "Stopping at the first line of the Get method")
+
+	_Stopping at the first line of the Get method_
+
+1. Once you have reached the end of the method, press **F5** and go back to the browser.
+
+	![Retriving the question](images/retriving-the-questions.png?raw=true "Retriving the question")
+
+	_Retriving the question_
+
+1. Click any of the buttons.
+
+1. In Visual Studio, you will see the debugger at the first line of the **Post** method. Continue by stepping over the code (**F10**).
+
+	![Stopping at the first line of the Post method](images/stopping-at-the-first-line-of-post.png?raw=true "Stopping at the first line of the Post method")
+
+	_Stopping at the first line of the Post method_
 
 ---
 
