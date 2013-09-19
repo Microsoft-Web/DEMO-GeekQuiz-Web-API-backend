@@ -10,6 +10,7 @@ using System.Web.Http;
 
 namespace GeekQuiz.Controllers
 {
+    [Authorize]
     public class TriviaController : ApiController
     {
         private TriviaContext db;
