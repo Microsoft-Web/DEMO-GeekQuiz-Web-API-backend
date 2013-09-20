@@ -139,7 +139,7 @@ This demo is composed of the following segments:
 	}
 ````
 
-1. Resolve the missing _using_ statemets for **Task**.
+1. Resolve the missing _using_ statements for **Task**.
 
 1. Add the **Post** method below the **Get** method in the **TriviaController**.
 
@@ -187,9 +187,9 @@ This demo is composed of the following segments:
 
 1. Once you have reached the end of the method, press **F5** and go back to the browser.
 
-	![Retriving the question](images/retriving-the-questions.png?raw=true "Retriving the question")
+	![Retrieving  the question](images/retriving-the-questions.png?raw=true "Retrieving the question")
 
-	_Retriving the question_
+	_Retrieving the question_
 
 1. Click any of the buttons.
 
