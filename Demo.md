@@ -53,22 +53,22 @@ This demo is composed of the following segments:
 1. [Create the TriviaController](#segment1).
 1. [Run the solution](#segment2).
 
-<a name="Segment1" />
+<a name="segment1" />
 ### Create the TriviaController ###
 
-1. Right click on the **Controllers** folder and go to **Add/Controller...** in order to create a new **TriviaController**.
+1. Right-click the **Controllers** folder, expand the **Add** menu and click **Controller...** in order to create a new **TriviaController**.
 
 	![Creating a new Controller](images/creating-a-new-controller.png?raw=true "Creating a new Controller")
 
 	_Creating a new Controller_
 
-1. In the **Add Scaffold** dialog select the **Web API 2 Controller - Empty** option from the list and click **Ok**
+1. In the **Add Scaffold** dialog, select **Web API 2 Controller - Empty** from the list and click **Add**.
 
 	![Selecting the Web API 2 Controller - Empty option](images/selecting-the-web-api-controller-scaffold.png?raw=true "Selecting the Web API 2 Controller - Empty option")
 
 	_Selecting the Web API 2 Controller - Empty option_
 
-1. In the **Add Controller** dialog, set the Controller name to **TriviaController**.
+1. In the **Add Controller** dialog, set the Controller's name to **TriviaController**.
 
 	![Setting the name to the TriviaController](images/setting-the-name-to-the-triviacontroller.png?raw=true "Setting the name to the TriviaController")
 
@@ -105,9 +105,9 @@ This demo is composed of the following segments:
 	````C#
 	using GeekQuiz.Models;
 	using GeekQuiz.Services;
-````
+	````
 
-1. Add the Authorize attribute to the TriviaController.
+1. Add the `Authorize` attribute to the TriviaController.
 
 	<!-- mark:3 -->
 	````C#
@@ -117,7 +117,6 @@ This demo is composed of the following segments:
 		 public class TriviaController : ApiController
 		 {
 	````
-
 
 1. Add the following code to create a **Get** action in the **TriviaController**.
 
@@ -141,7 +140,7 @@ This demo is composed of the following segments:
 
 1. Resolve the missing _using_ statements for **Task**.
 
-1. Add the **Post** method below the **Get** method in the **TriviaController**.
+1. Add the **Post** method from the following code snippet just after the **Get** method.
 
 	<!-- mark:1-15 -->
 	````C#
@@ -164,7 +163,7 @@ This demo is composed of the following segments:
 
 1. Build the solution.
 
-<a name="Segment2" />
+<a name="segment2" />
 ### Run the solution ###
 
 1. Set breakpoints on the first line of the **Get** and **Post** methods.
@@ -173,13 +172,13 @@ This demo is composed of the following segments:
 
 	_Setting the debug breakpoints to the methods_
 
-1. Debug the application with **F5**.
+1. Press **F5** to start debugging the application.
 
 	> **Note:** If the Log in page is displayed, provide the credentials you created during the setup steps.
 	
 	> ![Logging in the site](images/logging-in-the-app.png?raw=true "Logging in the site")
 
-1. In Visual Studio, you will see the debugger at the first line of the **Get** method. Continue by stepping over the code (**F10**).
+1. In Visual Studio, the breakpoint on the first line of the **Get** method will be hit. Step over (**F10**) until the method's last line.
 
 	![Stopping at the first line of the Get method](images/stopping-at-the-first-line-of-get.png?raw=true "Stopping at the first line of the Get method")
 
@@ -193,7 +192,7 @@ This demo is composed of the following segments:
 
 1. Click any of the buttons.
 
-1. In Visual Studio, you will see the debugger at the first line of the **Post** method. Continue by stepping over the code (**F10**).
+1. In Visual Studio, the breakpoint on the first line of the **Post** method will be hit. Step over (**F10**) until the method's last line.
 
 	![Stopping at the first line of the Post method](images/stopping-at-the-first-line-of-post.png?raw=true "Stopping at the first line of the Post method")
 
@@ -204,11 +203,11 @@ This demo is composed of the following segments:
 <a name="summary" />
 ## Summary ##
 
-By completing this demo you should have:
+By completing this demo you:
 
 1. Created a new TriviaController.
-1. Built the Get method which returns async Task<TriviaQuestion> using QuestionsService.
-1. Built the Post method which accepts a TriviaAnswer using AnswersService.
-1. Set breakpoints on the Get and Post methods, ran the application, and stepped the methods.
+1. Implemented the Get method which returns async Task<TriviaQuestion> using QuestionsService.
+1. Implemented the Post method which accepts a TriviaAnswer using AnswersService.
+1. Set breakpoints on the Get and Post methods, ran the application, and walked through the methods' implementation.
 
 ---
