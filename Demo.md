@@ -37,6 +37,13 @@ In this demo, you will see how to:
 
 In order to execute this demo you need to set up your environment.
 
+1. Follow the steps detailed in [this link](http://docs.nuget.org/docs/creating-packages/hosting-your-own-nuget-feeds) to setup local sources for the following directories:
+
+	* **C:\Program Files (x86)\Microsoft Web Tools\Packages**
+	* **C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Stack 5\Packages**
+
+	![NuGet Sources](Images/nuget-sources.png?raw=true)
+
 1. Open Visual Studio 2013.
 1. Open the **GeekQuiz.sln** solution located under **source\begin**.
 1. If you don't have one, create a user account for the application. To do that, press **F5**, click **Register** and provide the information required. After that, close the browser window.
