@@ -5,32 +5,23 @@
 <a name="Overview" />
 ## Overview ##
 
-This demo builds the Web API backend shown in the GeekQuiz application. It will rely on the QuestionsService and AnswersService for data access, but will be otherwise built completely from scratch.
-
-In this demo you will:
-
-1. Create a new TriviaController.
-1. Build the Get method which returns async Task<TriviaQuestion> using QuestionsService.
-1. Build the Post method which accepts a TriviaAnswer using AnswersService.
-1. Set breakpoints on the Get and Post methods, run the application, and step the methods.
+In this demo you will walk through the process of building GeekQuiz backend. It'll be implemented using ASP.NET Web API to create a controller with two operations; Get, which returns the next question relying on the QuestionService for data access and Post to store the given answer using the AnswerService for data access.
 
 <a id="goals" />
 ### Goals ###
+
 In this demo, you will see how to:
 
-1. (TODO: Insert goal 1 here)
-1. (TODO: Insert goal 2 here)
-1. (TODO: Insert goal 3 here)
+1. Create a new Web API controller
+1. Implement a Get operation in the Web API controller
+1. Implement a Post operation in the Web API controller
 
 <a name="technologies" />
 ### Key Technologies ###
 
-- {TODO: Include technology name here} [here][1]
-- {TODO: Include technology name here}
-- [{TODO: Include technology name here}][2]
+- [ASP.NET Web API][1]
 
-[1]: http://insert_link_to_technology_1_here/
-[2]: http://insert_link_to_technology_2_here/
+[1]: www.asp.net/web-api
 
 <a name="Setup" />
 ### Setup and Configuration ###
@@ -210,11 +201,11 @@ This demo is composed of the following segments:
 <a name="summary" />
 ## Summary ##
 
-By completing this demo you:
+By completing this demo you should have:
 
-1. Created a new TriviaController.
-1. Implemented the Get method which returns async Task<TriviaQuestion> using QuestionsService.
-1. Implemented the Post method which accepts a TriviaAnswer using AnswersService.
-1. Set breakpoints on the Get and Post methods, ran the application, and walked through the methods' implementation.
+1. Created a new Web API controller named "TriviaController".
+1. Implemented the Get method to retrieve the next question and wired it to the database using the QuestionsService.
+1. Implemented the Post method to store an answer and wired it to the database using the AnswersService.
+1. Debug the implemented methods and walk through their implementation to better understand what's going on.
 
 ---
